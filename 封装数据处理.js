@@ -102,3 +102,12 @@ function getMax(){
         function randomInt(n,m){
     return Math.floor(Math.random()*(m-n+1)+n);
     }
+
+
+//Object.keys() 
+//可处理对象，数组，字符串，获取对应key值，并按升序排序返回数组
+
+//Object.values() 和Object.keys()相反
+
+
+//Polyfill
