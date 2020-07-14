@@ -103,6 +103,17 @@ function getMax(){
     return Math.floor(Math.random()*(m-n+1)+n);
     }
 
+//数组去重
+//ES6
+const numbers = [1, 2, 1, 1, 2, 1, 3, 4, 1 ];
+const uniq = [...new Set(numbers)] // => [ 1, 2, 3, 4 ];
+const uniq2 = Array.from(new Set(numbers)) // => [ 1, 2, 3, 4 ];
+//filter 
+function unique (arr) {
+    var res = arr.filter(function (item, index, array) {
+           return array.indexOf(item) === index; //array.indexOf(item) === index 说明这个元素第一次出现，后面这个item再出现他的item肯定不是index了
+    }) 
+    return res; }
 
 //Object.keys() 
 //可处理对象，数组，字符串，获取对应key值，并按升序排序返回数组
@@ -111,3 +122,4 @@ function getMax(){
 
 
 //Polyfill
+
